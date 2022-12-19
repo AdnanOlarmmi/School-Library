@@ -111,8 +111,7 @@ rubocop
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Implement revese decoding.**
-- [ ] **Write Extra Message.**
+- [ ] **Add more classes**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
