@@ -21,7 +21,7 @@
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-- [👥 Authors](#authors)
+- [👤 Author](#author)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -99,18 +99,13 @@ rubocop
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👤 Authors <a name="authors"></a>
+## 👤 Author <a name="author"></a>
 
 👤 **Is-haq, Adnan Olamilekan**
 
 - GitHub: [@AdnanOlarmmi](https://github.com/adnanolarmmi)
 - Twitter: [@AdnanIshaqOla](https://twitter.com/AdnanIshaqOla)
 - LinkedIn: [Adnan (Olamilekan) Is-haq](https://linkedin.com/in/adnan-is-haq-olamilekan)
-
-👤 **Samuel Munyi**
-
-- GitHub: [@devMunyi](https://github.com/devMunyi)
-- LinkedIn: [Samuel Munyi](https://www.linkedin.com/in/samuel-munyi-01315b174/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
