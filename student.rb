@@ -12,7 +12,3 @@ class Student < Person
     '¯(ツ)/¯'
   end
 end
-
-stu = Student.new(1, 'Math')
-
-puts stu.name
