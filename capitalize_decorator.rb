@@ -1,13 +1,12 @@
-require_relative 'nameable'
+require_relative 'base_decorator'
 
-class CapitalizeDecorator < Nameable
+class CapitalizeDecorator < BaseDecorator
 
     def initialize(nameable)
         @nameable = nameable
     end
-
+  
     def correct_name
         @nameable.correct_name.capitalize
     end
 end
-
