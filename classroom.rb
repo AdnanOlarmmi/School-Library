@@ -10,7 +10,8 @@ class Classroom
     @students << student
     student.classroom = self
   end
-  def ll 
+
+  def ll
     puts 'lasd'
   end
 end

@@ -1,6 +1,5 @@
 require_relative 'person'
 require_relative 'classroom'
-require_relative 'student'
 
 class Student < Person
   attr_accessor :classroom
@@ -18,4 +17,3 @@ class Student < Person
     '¯(ツ)/¯'
   end
 end
-
