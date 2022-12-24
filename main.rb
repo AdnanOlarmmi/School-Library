@@ -1,5 +1,7 @@
 require_relative 'app'
 
+def others(option); end
+
 def main
   app = App.new
   books = []
@@ -44,6 +46,5 @@ def main
   end
   puts 'Thank you for using this app!'
 end
-
 
 main
