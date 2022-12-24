@@ -11,13 +11,13 @@ class App
     @rentals = []
   end
 
-  def list_books(books)
+  def list_books(_books)
     @books.each do |book|
       puts "Title: \"#{book.title}\", Author: #{book.author}"
     end
   end
 
-  def list_people(people)
+  def list_people(_people)
     @people.each do |person|
       puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
     end
@@ -34,12 +34,16 @@ class App
     age = gets.chomp
     print 'Name: '
     name = gets.chomp
-    print 'Parent Permission: '
+    if person_type == '1'
+      print 'Parent Permission: '
+    else
+      print 'Specialization:'
+    end
     parent_permission = gets.chomp
-    person = person_type == '1' ? Student.new(age, name, parent_permission) : Teacher.new(age,'Unknown', name)
+    person = person_type == '1' ? Student.new(age, name, parent_permission) : Teacher.new(age, 'Unknown', name)
     @people.push(person)
-    puts "Person created successfully #{person}", person.name, person.age, 
-    person
+    puts "Person created successfully #{person}", person.name, person.age,
+         person
   end
 
   def create_book
@@ -50,7 +54,7 @@ class App
     @books.push(Book.new(title, author))
   end
 
-  def create_rental(books, people)
+  def create_rental(_books, _people)
     puts 'Select a book from the following list by number'
     @books.each_with_index do |book, index|
       puts "#{index}) Title: \"#{book.title}\", Author: #{book.author}"
@@ -74,9 +78,9 @@ class App
     person_id = gets.chomp.to_i
     puts 'Rentals: '
     @rentals.each do |rental|
-        if rental.person.id == person_id
-        puts "Date: #{rental.date}, Book #{rental.book.title} by #{rental.book.author} borrowed by #{rental.person.name}"
-        end
+      if rental.person.id == person_id
+        puts "Date:#{rental.date}, Book #{rental.book.title} by #{rental.book.author} borrowed by #{rental.person.name}"
+      end
     end
   end
 end
