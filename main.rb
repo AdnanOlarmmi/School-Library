@@ -1,6 +1,8 @@
 require_relative 'app'
 
+
 def main
+    app = App.new
     books = []
     people = []
     rentals = []
@@ -23,21 +25,21 @@ def main
                 puts 'There are no books yet'
                 next
             end
-            list_books(books)
+            app.list_books(books)
         when '2'
             if people.empty?
                 puts 'There are no people yet'
                 next 
             end
-            list_people(people)
+            app.list_people(people)
         when '3'
-            people.push(create_person)
+            people.push(app.create_person)
         when '4'
-            books.push(create_book)
+            books.push(app.create_book)
         when '5'
-            rentals.push(create_rental(books, people))
+            rentals.push(app.create_rental(books, people))
         when '6'
-            list_rentals_for_person_id(people)
+            app.list_rentals_for_id
         end
         puts
     end
