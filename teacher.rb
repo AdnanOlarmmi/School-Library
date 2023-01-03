@@ -14,6 +14,6 @@ class Teacher < Person
   end
 end
 
-teach = Teacher.new('11', 'Adnan', 'ad')
+# teach = Teacher.new('11', 'Adnan', 'ad')
 
-puts teach.name, teach.age, teach.specialization
+# puts teach.name, teach.age, teach.specialization
