@@ -1,6 +1,5 @@
 require_relative 'app'
-
-def others(option); end
+require_relative 'logic'
 
 def main
   app = App.new
