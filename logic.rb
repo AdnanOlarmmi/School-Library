@@ -1,5 +1,4 @@
 require_relative 'app'
-# require_relative 'main'
 
 class Logic
   def initialize(app)

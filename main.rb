@@ -4,11 +4,8 @@ require_relative 'logic'
 def main
   app = App.new
   logic = Logic.new(app)
-  # books = []
-  # people = []
-  # rentals = []
-  puts 'Welcome to School Library App!'
-  puts
+
+  puts "Welcome to School Library App!\n"
   option = nil
   while option != '7'
     puts 'Please choose an option by entering a number:'
@@ -20,28 +17,6 @@ def main
     puts '6 - List all rentals for a given person id'
     puts '7 - Exit'
     option = gets.chomp
-    # case option
-    # when '1'
-    #   if books.empty?
-    #     puts 'There are no books yet'
-    #     next
-    #   end
-    #   app.list_books(books)
-    # when '2'
-    #   if people.empty?
-    #     puts 'There are no people yet'
-    #     next
-    #   end
-    #   app.list_people(people)
-    # when '3'
-    #   people.push(app.create_person)
-    # when '4'
-    #   books.push(app.create_book)
-    # when '5'
-    #   rentals.push(app.create_rental(books, people))
-    # when '6'
-    #   app.list_rentals_for_id
-    # end
     logic.run(option)
     puts
   end
