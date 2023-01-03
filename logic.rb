@@ -29,6 +29,10 @@ class Logic
     when '5'
       @rentals.push(@app.create_rental(@books, @people))
     when '6'
+      if @books.empty? || @people.empty?
+        puts 'There are no people or books yet'
+        return
+      end
       @app.list_rentals_for_id
     end
   end
