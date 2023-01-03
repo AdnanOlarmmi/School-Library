@@ -78,7 +78,7 @@ class App
     person_id = gets.chomp.to_i
     puts 'Rentals: '
     @rentals.each do |rental|
-      if rental.person.id == person_id
+      if rental.person && rental.person.id == person_id
         puts "Date:#{rental.date}, Book #{rental.book.title} by #{rental.book.author} borrowed by #{rental.person.name}"
       end
     end
