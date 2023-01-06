@@ -20,9 +20,9 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 Leaderboard <a name="about-project"></a>
+# 📖 School Library <a name="about-project"></a>
 
-**Morse Decode**  is a method used in telecommunication to decode symbol characters as standardized sequences of two different signal durations, called dots and dashes, or dits and dahs.[3][4] Morse code is named after Samuel Morse, one of the inventors of the telegraph.
+**School Library** is a backend app that allows you keeping track of all the records of books in a library and who borrows them.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -37,8 +37,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Decoding Morse Code.**
-- **Use Ruby.**
+- **Add new students or teachers.**
+- **Add new books.**
+- **Save records of who borrowed a given book and when.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -58,12 +59,12 @@ In order to run this project you need:
 Clone this repository to your desired folder or download the Zip folder:
 
 ```
-git clone https://github.com/AdnanOlarmmi/Morse-Decode.git
+git clone https://github.com/AdnanOlarmmi/School-Library.git
 ```
 
 - Navigate to the location of the folder in your machine:
 
-**``you@your-Pc-name:~$ cd Morse-Decode``**
+**``you@your-Pc-name:~$ cd School-Library``**
 
 ### Install
 
